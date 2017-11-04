@@ -14,9 +14,9 @@ To instantiate a new cron schedule:
 
 ```php
 $schedule = new \Theriault\CronSchedule("* * * * *"); // run every minute
-$schedule = new \Theriault\CronSchedule("* */2 * * *"); // run every other hour 
+$schedule = new \Theriault\CronSchedule("* */2 * * *"); // run every other hour  (e.g. 12AM, 2AM, 4AM, 6AM, etc)
 $schedule = new \Theriault\CronSchedule("* 2,4,6,8 * * *"); // run at 2AM, 4AM, 6AM, 8AM
-$schedule = new \Theriault\CronSchedule("* */2 * * *"); // run every other hour (e.g. 12AM, 2AM, 4AM, 6AM, etc)
+$schedule = new \Theriault\CronSchedule("* * * Jan Fri"); // run every Friday in January
 ```
 
 ### Check if a timestamp falls within the schedule
